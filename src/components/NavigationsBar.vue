@@ -3,9 +3,6 @@
     <v-tabs v-model="tab">
       <v-tab v-for="item in items" :key="item.name" >{{item.name}}</v-tab>
     </v-tabs>
-
-    FUUUCK §{{tab}}
-
     <v-tabs-items v-model="tab">
       <v-tab-item
           v-for="item in items"
@@ -15,7 +12,7 @@
             color="basil"
             flat
         >
-          <v-card-text>{{ item.name }} -> {{item.url}}</v-card-text>
+          <v-card><cvr-input :svig-tab="item"/></v-card>
         </v-card>
       </v-tab-item>
     </v-tabs-items>

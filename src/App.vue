@@ -1,9 +1,6 @@
 <template>
   <v-app>
     <navigations-bar />
-    <v-main>
-      fuck
-    </v-main>
   </v-app>
 </template>
 
